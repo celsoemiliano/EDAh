@@ -1,0 +1,11 @@
+python main.py --jobs=512 --machines=16 --path=512x16/u_s_hilo.0,512x16/u_s_hihi.0,512x16/u_s_lohi.0,512x16/u_s_lolo.0,512x16/u_i_hilo.0,512x16/u_i_hihi.0,512x16/u_i_lohi.0,512x16/u_i_lolo.0,512x16/u_c_hilo.0,512x16/u_c_hihi.0,512x16/u_c_lohi.0,512x16/u_c_lolo.0 --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20,30 --mutation=0,10,20,30
+
+python main.py --jobs=1024 --machines=32 --path=1024x32 --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20,30 --mutation=10
+python main.py --jobs=2048 --machines=64 --path=2048x64/A.u_c_hihi --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20 --mutation=0
+
+python main.py --jobs=2048 --machines=64 --path=2048x64 --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20 --mutation=0
+python main.py --jobs=512 --machines=16 --path=512x16/u_c_hihi.0 --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20 --mutation=10
+
+python main.py --jobs=12 --machines=5 --path=12x5/Borges.u_c_hihi --numInd=100 --numGen=100 --toMatrix=0.3,0.5 --elitism=10,20 --mutation=10 --jobsSequence=3,3,4,2
+python main.py --jobs=12 --machines=5 --path=12x5/Borges.u_c_hihi --numInd=20 --numGen=20 --toMatrix=0.5 --elitism=10 --mutation=10 --jobsSequence=3,3,4,2
+python main.py --jobs=12 --machines=5 --path=12x5/Cintra.u_c_hihi --numInd=20 --numGen=20 --toMatrix=0.5 --elitism=10 --mutation=10 --jobsSequence=3,3,4,2
